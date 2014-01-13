@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.applicationnexus.plugin.speechrecognition"
+        version="0.0.1">
+    
+    <name>SpeechRecognition</name>
+    <description>Convert Speech to Text</description>
+    
+    <js-module name="SpeechRecognition" src="www/SpeechRecognition.js">
+        <clobbers target="cordova.SpeechRecognition" />
+    </js-module>
+    
+    <platform name="ios">
+        
+        <config-file target="config.xml" parent="/*">
+            <feature name="SpeechRecognition">
+                <param name="ios-package" value="SpeechRecognition"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        
+        <header-file src="src/SpeechRecognition.h" />
+        
+        <source-file src="src/SpeechRecognition.m" />
+        
+        <source-file src="src/libSpeechToText.a" framework="true" />
+        <framework src='AVFoundation.framework' />
+        <framework src='AudioToolbox.framework' />
+        <framework src='CoreAudio.framework' />
+        
+    </platform>
+        
+    </plugin>
