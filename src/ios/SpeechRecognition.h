@@ -20,5 +20,5 @@
 
 -(void)startRecording:(CDVInvokedUrlCommand*)command;
 -(void)stopRecording:(CDVInvokedUrlCommand*)command;
-
+-(void)showOutput:(CDVInvokedUrlCommand*)command;
 @end
