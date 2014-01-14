@@ -19,11 +19,11 @@
             </feature>
         </config-file>
         
-        <header-file src="src/SpeechRecognition.h" />
+        <header-file src="src/ios/SpeechRecognition.h" />
         
-        <source-file src="src/SpeechRecognition.m" />
+        <source-file src="src/ios/SpeechRecognition.m" />
         
-        <source-file src="src/libSpeechToText.a" framework="true" />
+        <source-file src="src/ios/frameworks/libSpeechToText.a" framework="true" />
         <framework src='AVFoundation.framework' />
         <framework src='AudioToolbox.framework' />
         <framework src='CoreAudio.framework' />
