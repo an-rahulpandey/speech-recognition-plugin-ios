@@ -25,6 +25,11 @@
         <header-file src="src/ios/SpeechRecognition.h" />
         <source-file src="src/ios/SpeechRecognition.m" />
         
+        <header-file src="src/ios/SpeechToTextModule.h" />
+        <header-file src="src/ios/UIProgressAlertView.h" />
+        <header-file src="src/ios/UIWaveAlertView.h" />
+        <header-file src="src/ios/WaveDisplay.h" />
+        
         <source-file src="src/ios/frameworks/libSpeechToText.a" framework="true" />
         
         <framework src='AVFoundation.framework' />
